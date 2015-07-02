@@ -112,10 +112,10 @@ define(['../../lib/chai/chai.js', '../../lib/underscore/underscore.js'], functio
           assuming(extendsPrototype).expect(prototypeObjectPropertyCount).to.be.above(0);
         });
 
-        var referencesThis = requireOption('referencesThis');
-        it(might('reference the keyword this', referencesThis), function(){
-          assuming(referencesThis).expect(/^((?!\/\/).)*(this)/.test(constructor)).to.be.true;
-        });
+        //var referencesThis = requireOption('referencesThis');
+        //it(might('reference the keyword this', referencesThis), function(){
+          //assuming(referencesThis).expect(/^((?!\/\/).)*(this)/.test(constructor)).to.be.true;
+        //});
 
         var referencesReturn = requireOption('referencesReturn');
         it(might('reference the return keyword', referencesReturn), function(){
