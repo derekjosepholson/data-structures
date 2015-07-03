@@ -7,21 +7,21 @@ var Queue = function() {
 };
 
 Queue.prototype.enqueue = function(value){
-	this[this.count] = value;
-	this.count++;
-	this.properties++;
+  this[this.count] = value;
+  this.count++;
+  this.properties++;
 };
 
 Queue.prototype.dequeue = function(){
-	if (this.properties > 0){
-		this.properties--;
-		this.lowestIndex++;
-		return this[this.lowestIndex - 1];
-	}
+  if (this.properties > 0){
+    this.properties--;
+    this.lowestIndex++;
+    return this[this.lowestIndex - 1];
+  }
 };
 
 Queue.prototype.size = function(){
-	return this.properties;
+  return this.properties;
 };
 
 

@@ -7,19 +7,19 @@ var Stack = function() {
 };
 
 var stackMethods = {
-	push: function(value){
-	  this[this.count+ ''] = value;
-	  this.count ++;	
-	},
-	pop: function(){
-      if(this.count > 0){
-      	this.count--;
-      	return this[this.count + ''];
-      }
-	},
-	size: function(){
-		return this.count;
-	}
+  push: function(value){
+    this[this.count+ ''] = value;
+    this.count ++;  
+  },
+  pop: function(){
+    if(this.count > 0){
+      this.count--;
+      return this[this.count + ''];
+    }
+  },
+  size: function(){
+    return this.count;
+  }
 };
 
 

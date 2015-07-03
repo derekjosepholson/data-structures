@@ -6,25 +6,24 @@ var Queue = function() {
   instance.properties = 0;
   instance.lowestIndex = 0;
   return instance;
-
 };
 
 var queueMethods = {
-	enqueue: function(value){
-		this[this.count] = value;
-		this.count++;
-		this.properties++;
-	},
-	dequeue: function(){
-		if (this.properties > 0){
-			this.properties--;
-			this.lowestIndex++;
-			return this[this.lowestIndex - 1];
-		}
-	},
-	size: function(){
-		return this.properties;
-	}
+  enqueue: function(value){
+    this[this.count] = value;
+    this.count++;
+    this.properties++;
+  },
+  dequeue: function(){
+    if (this.properties > 0){
+      this.properties--;
+      this.lowestIndex++;
+      return this[this.lowestIndex - 1];
+    }
+  },
+  size: function(){
+    return this.properties;
+  }
 };
 
 

@@ -16,7 +16,6 @@ var Queue = function(){
     if(properties > 0){
       properties--;
       lowestIndex ++;
-    
       return someInstance[lowestIndex-1 + ''];
     }
   };
