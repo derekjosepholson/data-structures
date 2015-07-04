@@ -42,7 +42,7 @@ describe('graph', function() {
     graph.addEdge('satsumas', 'apples');
     expect(graph.hasEdge('apples', 'satsumas')).to.equal(true);
   });
-
+ 
   it('should execute a callback on each node in the graph', function() {
     var connectToSatsumas = function(item) {
       graph.addEdge(item, 'satsumas');

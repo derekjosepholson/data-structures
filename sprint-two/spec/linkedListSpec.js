@@ -1,3 +1,4 @@
+//hello
 describe('linkedList', function() {
   var linkedList;
 
